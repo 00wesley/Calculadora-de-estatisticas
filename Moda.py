@@ -6,6 +6,7 @@ from Verificacao import Verificacao
 lista = Verificacao.receberNumeros()
 
 class Moda:
+    #usamos um bloco try para tentar executar a função e se der errado mostrar uma mensagem de erro
     def calcularModa():
       try:
         moda = statistics.mode(lista)

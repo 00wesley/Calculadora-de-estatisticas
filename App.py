@@ -1,10 +1,11 @@
+#Aqui temos a interação do usuário
+
 while True:
   options = input('Escolha uma opção:  \n'
                   '1. Calcular media\n'
                   '2. Calcular moda\n'
                   '3. Calcular mediana\n'
-                  '4. Calcular media, moda e mediana\n'
-                  '5. Sair\n')
+                  '4. Sair\n')
   
   if options == '1':
     from Media import Media
@@ -16,11 +17,6 @@ while True:
     from Mediana import Mediana
     Mediana.calcularMediana()
   elif options == '4':
-    from Media import Media
-    from Moda import Moda
-    from Mediana import Mediana
-    Media.obterMedia()
-    Moda.calcularModa()
-    Mediana.calcularMediana()
-  elif options == '5':
     break
+  else:
+    print('Desculpe, você digitou uma opção invália.')

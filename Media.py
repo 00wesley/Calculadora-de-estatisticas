@@ -10,7 +10,7 @@ class Media:
     #somando cada numero dos dados inseridos:
     for numero in dados:
       soma += numero
-    #pegado a soma e dividindo pelo tamanho da lista
+    #pegando a soma e dividindo pelo tamanho da lista
     media = soma / len(dados)
     print(f"A media dos números: {dados} é: {media:.2f}")
     
