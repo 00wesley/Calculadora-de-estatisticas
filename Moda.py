@@ -11,5 +11,5 @@ class Moda:
       try:
         moda = statistics.mode(lista)
         return print(f"A media dos números: {lista} é: {moda:.2f}")
-      except statistics.StatisticsError:
+      except:
         return print("Erro: Não há uma moda clara na lista.")
