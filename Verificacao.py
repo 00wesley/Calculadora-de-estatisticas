@@ -1,5 +1,4 @@
 #O Objetivo da classe é receber os números e transformá-los em dados do tipo número e também verificar se o usuário inseriu mais de um número
-
 class Verificacao:
   def receberNumeros():
     #usando split para receber todos os números de uma vez:
