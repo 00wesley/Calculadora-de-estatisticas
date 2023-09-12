@@ -11,7 +11,7 @@ class Verificacao:
       #ele ignora os dados que não podem ser convertidos em números.
       for item in entrada:
         try: 
-         numero = int(item)
+         numero = float(item)
          numeros.append(numero) 
         except:
          pass

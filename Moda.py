@@ -16,4 +16,4 @@ class Moda:
         except:
          return print("Não conseguimos executar o calculo, por favor verifique os dados inseridos.")
       except:
-        return print('Error')
+        return print('Erro')
