@@ -7,10 +7,14 @@ class Verificacao:
     if len(entrada) > 1:
       #criando uma lista para receber os números:
       numeros = []
-      #verificando se os numeros inseridos são numeros, se for é inserido na lista, se não da erro.
+      #verificando se os numeros inseridos são numeros, se for é inserido na lista.
+      #ele ignora os dados que não podem ser convertidos em números.
       for item in entrada:
-        numero = int(item)
-        numeros.append(numero)
+        try: 
+         numero = int(item)
+         numeros.append(numero) 
+        except:
+         pass
       return numeros
     else:
       return print('Para obter as estastisticas deve inserir mais de um número.')

@@ -2,16 +2,21 @@
 import statistics
 #importando a classe verificação:
 from Verificacao import Verificacao
-#dizendo que a lista é igual ao resultado da verificação:
-lista = Verificacao.receberNumeros()
+
+
 
 class Mediana:
   #usamos um bloco try para tentar executar a função e se der errado mostrar uma mensagem de erro.
   def calcularMediana():
+    #dizendo que a lista é igual ao resultado da verificação:
     try:
-      mediana = statistics.median(lista)
-      return print(f"A media dos números: {lista} é: {mediana:.2f}")
+      lista = Verificacao.receberNumeros()
+      try:
+        mediana = statistics.median(lista)
+        return print(f"A mediana dos números: {lista} é: {mediana:.2f}")
+      except:
+        return print("Não conseguimos executar o calculo, por favor verifique os dados inseridos.")
     except:
-      return print("Erro: A lista está vazia ou contém valores não numéricos.")
-
-Mediana.calcularMediana()
+      return print('Error')
+    
+    
