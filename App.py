@@ -2,7 +2,7 @@ from Media import Media
 from Moda import Moda
 from Mediana import Mediana
 
-#Aqui temos a interação do usuário
+#Aqui temos a interação do usuário:
 while True:
   options = input('Escolha uma opção:  \n'
                   '1. Calcular média\n'
