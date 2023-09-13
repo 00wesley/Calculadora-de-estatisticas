@@ -6,7 +6,7 @@ class Verificacao:
     if len(entrada) > 1:
       #criando uma lista para receber os números:
       numeros = []
-      #verificando se os numeros inseridos são numeros, se for é inserido na lista.
+      #verificando se os dados inseridos são numeros, se for é inserido na lista.
       #ele ignora os dados que não podem ser convertidos em números.
       for item in entrada:
         try: 
