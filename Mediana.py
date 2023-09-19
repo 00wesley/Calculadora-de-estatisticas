@@ -12,9 +12,9 @@ class Mediana:
       try:
         mediana = statistics.median(lista)
         return print(f"A mediana dos números: {lista} é: {mediana:.2f}")
-      except:
+      except statistics.StatisticsError: 
         return print("Não conseguimos executar o calculo, por favor verifique os dados inseridos.")
     except:
-      return print('Error')
+      return print('Não conseguimos executar o calculo, por favor verifique os dados inseridos')
     
     

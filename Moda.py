@@ -1,5 +1,5 @@
 #importanto a biblioteca statistics:
-import statistics
+import statistics 
 #importando a classe de obter os valores:
 from Verificacao import Verificacao
 
@@ -11,9 +11,9 @@ class Moda:
       try:
         lista = Verificacao.receberNumeros()
         try:
-          moda = statistics.mode(lista)
+          moda = statistics.multimode(lista)
           return print(f"A moda dos números: {lista} é: {moda:.2f}")
-        except:
+        except statistics.StatisticsError:
          return print("Não conseguimos executar o calculo, por favor verifique os dados inseridos.")
       except:
-        return print('Erro')
+        return print('Não conseguimos executar o calculo, por favor verifique os dados inseridos')
